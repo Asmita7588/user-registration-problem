@@ -6,14 +6,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         UserRegistration userRegistration = new UserRegistration();
-        System.out.println("Enter User Mobile Number: ");
-        String mobileNumber = scanner.nextLine();
+        System.out.println("Enter User's Password: ");
+        String password = scanner.nextLine();
 
-        if (userRegistration.isValidMobileNumber(mobileNumber)) {
+        if (userRegistration.isValidPassword(password)) {
 
-            System.out.println("Mobile Number is valid.");
+            System.out.println("Password is valid.");
         } else {
-            System.out.println("Invalid Mobile Number, Please enter the format e.g 91 7588742638");
+            System.out.println("Invalid Password , Please enter minimum 8 characters");
         }
 
         scanner.close();

@@ -1,8 +1,8 @@
 public class UserRegistration {
 
     //method to validate userName
-    public boolean isValidMobileNumber(String mobileNumber) {
+    public boolean isValidPassword(String password) {
 
-        return mobileNumber.matches("^[0-9]{1,3} [0-9]{10}$");
+        return password.matches("^.{8,}$");
     }
 }
