@@ -6,14 +6,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         UserRegistration userRegistration = new UserRegistration();
-        System.out.println("Enter User's Password: ");
-        String password = scanner.nextLine();
+        System.out.println("Enter User's Email: ");
+        String email = scanner.nextLine();
 
-        if (userRegistration.isValidPassword(password)) {
+        if (userRegistration.isValidEmail(email)) {
 
-            System.out.println("Password is valid.");
+            System.out.println("Email is valid.");
         } else {
-            System.out.println("Invalid Password , Please enter minimum 8 characters and 1 upper case letter,and 1 numeric digit also exactly 1 special character");
+            System.out.println("Invalid Email , Please follow the rules for valid emails.");
         }
 
         scanner.close();
