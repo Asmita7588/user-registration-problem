@@ -13,7 +13,7 @@ public class Main {
 
             System.out.println("Password is valid.");
         } else {
-            System.out.println("Invalid Password , Please enter minimum 8 characters");
+            System.out.println("Invalid Password , Please enter minimum 8 characters and one upper case letter");
         }
 
         scanner.close();
