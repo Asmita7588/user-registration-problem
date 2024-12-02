@@ -6,14 +6,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         UserRegistration userRegistration = new UserRegistration();
-        System.out.println("Enter User First Name: ");
-        String firstName = scanner.nextLine();
+        System.out.println("Enter User Last Name: ");
+        String lastName = scanner.nextLine();
 
-        if (userRegistration.isValidfirstName(firstName)) {
+        if (userRegistration.isValidLastName(lastName)) {
 
-            System.out.println("First Name is valid.");
+            System.out.println("Last Name is valid.");
         } else {
-            System.out.println("Invalid First Name! It must start with a capital letter and have at least 3 characters.");
+            System.out.println("Invalid Last Name,It must start with a capital letter and have at least 3 characters.");
         }
 
         scanner.close();
