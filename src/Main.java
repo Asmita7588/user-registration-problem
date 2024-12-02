@@ -6,14 +6,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         UserRegistration userRegistration = new UserRegistration();
-        System.out.println("Enter User Email Address: ");
-        String email = scanner.nextLine();
+        System.out.println("Enter User Mobile Number: ");
+        String mobileNumber = scanner.nextLine();
 
-        if (userRegistration.isValidEmail(email)) {
+        if (userRegistration.isValidMobileNumber(mobileNumber)) {
 
-            System.out.println("Email is valid.");
+            System.out.println("Mobile Number is valid.");
         } else {
-            System.out.println("Invalid Email, Please enter the format abc.xyz@bl.co.in");
+            System.out.println("Invalid Mobile Number, Please enter the format e.g 91 7588742638");
         }
 
         scanner.close();
