@@ -6,14 +6,14 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         UserRegistration userRegistration = new UserRegistration();
-        System.out.println("Enter User Last Name: ");
-        String lastName = scanner.nextLine();
+        System.out.println("Enter User Email Address: ");
+        String email = scanner.nextLine();
 
-        if (userRegistration.isValidLastName(lastName)) {
+        if (userRegistration.isValidEmail(email)) {
 
-            System.out.println("Last Name is valid.");
+            System.out.println("Email is valid.");
         } else {
-            System.out.println("Invalid Last Name,It must start with a capital letter and have at least 3 characters.");
+            System.out.println("Invalid Email, Please enter the format abc.xyz@bl.co.in");
         }
 
         scanner.close();

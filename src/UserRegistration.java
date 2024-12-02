@@ -1,7 +1,8 @@
 public class UserRegistration {
 
     //method to validate userName
-    public boolean isValidLastName(String lastName) {
-        return lastName.matches("^[A-Z][a-zA-Z]{2,}$");
+    public boolean isValidEmail(String email) {
+
+        return email.matches("^[a-zA-Z0-9]+([.][a-zA-Z0-9]+)?@[a-zA-Z0-9]+[.][a-zA-Z]{2,}([.][a-zA-Z]{2,})?$");
     }
 }
