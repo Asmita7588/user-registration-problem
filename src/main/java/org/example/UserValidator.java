@@ -9,24 +9,34 @@ package org.example;
         private static final String PASSWORD_REGEX = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=]).{8,}$";
 
 
-        public boolean validateFirstName(String firstName) {
-            return firstName.matches(NAME_REGEX);
+        public void validateFirstName(String firstName) {
+            if(!firstName.matches(NAME_REGEX)){
+               throw new InvalidFirstNameExceptions("Enter valid first Name start with capital letter and have at least 3 character");
+            }
         }
 
-        public boolean validateLastName(String lastName) {
-            return lastName.matches(NAME_REGEX);
+        public void validateLastName(String lastName) {
+            if(!lastName.matches(NAME_REGEX)){
+                throw new InvalidLastNameExceptions("Enter valid last name start with capital letter and should have minimum 3 letters");
+            }
         }
 
-        public boolean validateEmail(String email) {
-            return email.matches(EMAIL_REGEX);
+        public void validateEmail(String email) {
+            if(!email.matches(EMAIL_REGEX)){
+                throw  new InvalidEmailExceptions("Invalid Email: Does not match the required pattern.");
+            }
         }
 
-        public boolean validateMobile(String mobile) {
-            return mobile.matches(MOBILE_REGEX);
+        public void validateMobile(String mobile) {
+            if(!mobile.matches(MOBILE_REGEX)){
+                throw new InvalidMobileNumberExceptions("Invalid Mobile number: Does not with required pattern");
+            }
         }
 
-        public boolean validatePassword(String password) {
-            return password.matches(PASSWORD_REGEX);
+        public void validatePassword(String password) {
+            if(!password.matches(PASSWORD_REGEX)){
+                throw new InvalidPasswordExceptions("Invalid Password ,Does not with required pattern ");
+            }
         }
 
     }
