@@ -9,16 +9,7 @@ public class App
         Scanner scanner = new Scanner(System.in);
 
         UserValidator userValidator = new UserValidator();
-        try {
-            userValidator.validateFirstName("Asmita");
-            userValidator.validateLastName("Girhepunje");
-            userValidator.validateMobile("91 7588757774");
-            userValidator.validateEmail("Pass2@43gmail.com");
-            userValidator.validatePassword("Pass2@43");
-        }catch (InvalidFirstNameExceptions | InvalidLastNameExceptions
-                |InvalidEmailExceptions |InvalidMobileNumberExceptions |InvalidPasswordExceptions e){
-            System.out.println(e);
-        }
+        userValidator.validateUserDetails("Name","Lastame","girhepunje@gmail.com","91 7588742638","Pass@123");
 
 
 

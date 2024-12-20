@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import java.time.Duration;
 import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,6 +33,8 @@ public class UserRegistrationTest {
             });
 
         }
+
+
 
         @Test
         void testLastName_HappyCase() {
@@ -75,10 +78,11 @@ public class UserRegistrationTest {
         }
 
         @Test
-        void testPassword_HappyCase() {
+        public void testPassword_HappyCase() {
             validator.validatePassword("Password@123");
             validator.validatePassword("Secure@2023");
         }
+
 
         @Test
         void testPassword_SadCase() {
